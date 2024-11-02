@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 passport.use(new SpotifyStrategy({
     clientID: process.env.SPOTIFY_CLIENT_ID,
     clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-    callbackURL: '/auth/spotify/callback',
+    callbackURL: '/callback',
 },
     (accessToken, refreshToken, expires_in, profile, done) => {
         // Store user info in session
@@ -45,7 +45,7 @@ passport.deserializeUser((user, done) => {
 // Auth Routes
 app.get('/auth/spotify', passport.authenticate('spotify', { scope: ['user-read-private', 'user-read-email', 'user-top-read'] }));
 
-app.get('/auth/spotify/callback', passport.authenticate('spotify', { failureRedirect: '/' }), (req, res) => {
+app.get('/callback', passport.authenticate('spotify', { failureRedirect: '/' }), (req, res) => {
     // Successful authentication, redirect to the frontend.
     res.redirect('http://localhost:3000');
 });
@@ -93,4 +93,3 @@ app.get('/api/recommendations', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-
