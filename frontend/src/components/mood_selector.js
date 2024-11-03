@@ -11,9 +11,8 @@ const MoodSelector = ({ onMoodSelect }) => {
       <h2 id='basic'>What's your mood?</h2>
       <div className="modes">
         {[
-          'energize', 'calm', 'focus', 'sleep', 
-          'happy', 'homebound', 'reflective', 
-          'adventure', 'connection', 'meditative'
+          'happy', 'sad', 'irritable', 'calm', 
+          'sleep'
         ].map((mood) => (
           <button 
             key={mood} 

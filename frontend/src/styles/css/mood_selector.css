@@ -37,10 +37,10 @@ h1 {
 
 .modes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 12px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 30%;
+  margin-right: 30%;
   margin-top: 2%;
 }
 
@@ -55,66 +55,36 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-#energize {
-  background-color: #ff6b6b;
-}
-#calm {
-  background-color: #4d96ff;
-}
-#focus {
-  background-color: #f4a261;
-}
-#sleep {
-  background-color: #2a9d8f;
-}
 #happy {
   background-color: #e9c46a;
 }
-#homebound {
-  background-color: #264653;
+#sad {
+  background-color: #4d96ff;
 }
-#reflective {
-  background-color: #6a4c93;
+#irritable {
+  background-color: #dd896f;
 }
-#adventure {
-  background-color: #ff7f11;
+#calm {
+  background-color: #2a9d8f;
 }
-#connection {
-  background-color: #5e60ce;
-}
-#meditative {
-  background-color: #8d99ae;
+#sleep {
+  background-color: #769ae8;
 }
 
-#energize:hover {
-  background-color: #ff6b6b70;
-}
-#calm:hover {
-  background-color: #4d96ff70;
-}
-#focus:hover {
-  background-color: #f4a26170;
-}
-#sleep:hover {
-  background-color: #2a9d8f70;
-}
 #happy:hover {
   background-color: #e9c46a70;
 }
-#homebound:hover {
-  background-color: #26465370;
+#sad:hover {
+  background-color: #4d96ff70;
 }
-#reflective:hover {
-  background-color: #6a4c9370;
+#irritable:hover {
+  background-color: #f4a26170;
 }
-#adventure:hover {
-  background-color: #ff7f1170;
+#calm:hover {
+  background-color: #2a9d8f70;
 }
-#connection:hover {
-  background-color: #5e60ce70;
-}
-#meditative:hover {
-  background-color: #8d99ae70;
+#sleep:hover {
+  background-color: #40557c70;
 }
 
 @media (max-width: 600px) {

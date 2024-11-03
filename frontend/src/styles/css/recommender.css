@@ -20,5 +20,5 @@ button:hover {
     border-radius: 8px;
     cursor: pointer;
     font-size: 13px;
-    transition: backgroundColor 0.3s ease;
+    transition: background-color 0.3s ease;
 }

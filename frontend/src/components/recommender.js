@@ -23,10 +23,11 @@ function Recommender({ mood }) {
   return (
     <div style={{ textAlign: 'center', marginTop: '20px' }}>
       <h2>Recommended Songs for {mood.charAt(0).toUpperCase() + mood.slice(1)}</h2>
-      {error ? (
+      
+        {error ? (
         <p>{error}</p>
       ) : (
-        <body>
+        <div><ul>
           {songs.map((song, index) => (
             <li id="song_list" key={index}>
               <button class="rec_button"
@@ -37,7 +38,8 @@ function Recommender({ mood }) {
     </button>
   </li>
 ))}
-        </body>
+        </ul></div>
+        
       )}
     </div>
   );

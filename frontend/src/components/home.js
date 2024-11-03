@@ -55,7 +55,7 @@ function Home() {
       {/* <Clock /> */}
       <header className="app">
         <h1 id="spacer"></h1>
-        <h1>Spotify Recommender</h1>
+        <h1>AstroMood</h1>
         
         {selectedMood ? (
               <Recommender mood={selectedMood} />
