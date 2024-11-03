@@ -23,8 +23,8 @@
 }
 
 .container {
+  display: flexbox;
   text-align: center;
-  max-width: 600px;
 }
 
 h1 {
@@ -32,15 +32,16 @@ h1 {
   font-size: 34px;
   font-family: spaceagecyrillic;
   color: white;
-  padding-top: 100px;
-  padding-left: 100px;
+  padding-top: 50px;
 }
 
 .modes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding-left: 100px;
+  gap: 12px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
 }
 
 .mode-button {

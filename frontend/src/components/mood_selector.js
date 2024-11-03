@@ -8,7 +8,7 @@ const MoodSelector = ({ onMoodSelect }) => {
 
   return (
     <div className="container">
-      <h1>What is your mood?</h1>
+      <h2 id='basic'>What's your mood?</h2>
       <div className="modes">
         {[
           'energize', 'calm', 'focus', 'sleep', 
