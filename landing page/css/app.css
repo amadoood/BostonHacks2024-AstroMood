@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "spaceagecyrillic";
+  src: url("../fonts/spaceagecyrillic-regular.woff") format("woff"),
+    url("/fonts/spaceagecyrillic-regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+.back-home {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.app {
+  background: url("/images/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 34px;
+  font-family: spaceagecyrillic;
+  color: white;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+.modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-left: 100px;
+}
+
+.mode-button {
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#energize {
+  background-color: #ff6b6b;
+}
+#calm {
+  background-color: #4d96ff;
+}
+#focus {
+  background-color: #f4a261;
+}
+#sleep {
+  background-color: #2a9d8f;
+}
+#happy {
+  background-color: #e9c46a;
+}
+#homebound {
+  background-color: #264653;
+}
+#reflective {
+  background-color: #6a4c93;
+}
+#adventure {
+  background-color: #ff7f11;
+}
+#connection {
+  background-color: #5e60ce;
+}
+#meditative {
+  background-color: #8d99ae;
+}
+
+#energize:hover {
+  background-color: #ff6b6b70;
+}
+#calm:hover {
+  background-color: #4d96ff70;
+}
+#focus:hover {
+  background-color: #f4a26170;
+}
+#sleep:hover {
+  background-color: #2a9d8f70;
+}
+#happy:hover {
+  background-color: #e9c46a70;
+}
+#homebound:hover {
+  background-color: #26465370;
+}
+#reflective:hover {
+  background-color: #6a4c9370;
+}
+#adventure:hover {
+  background-color: #ff7f1170;
+}
+#connection:hover {
+  background-color: #5e60ce70;
+}
+#meditative:hover {
+  background-color: #8d99ae70;
+}
+
+@media (max-width: 600px) {
+  .modes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  h1 {
+    padding-left: 20px;
+  }
+}
