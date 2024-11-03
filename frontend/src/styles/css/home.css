@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "spaceagecyrillic";
+    src: url("../fonts/spaceagecyrillic-regular.woff") format("woff"),
+         url("../fonts/spaceagecyrillic-regular.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+  }
+  
+  .app {
+    background: url("../images/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 34px;
+    font-family: spaceagecyrillic;
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 40px;
+  }
